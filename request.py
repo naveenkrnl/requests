@@ -1,6 +1,6 @@
 import requests
 
-# Making a HEAD request
+# Making a get request
 r = requests.get('https://httpbin.org/get', data={'key':'value'})
 
 #check status code for response recieved
