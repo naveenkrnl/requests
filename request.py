@@ -1,7 +1,7 @@
 import requests
 
-# Making a get request
-r = requests.get('https://httpbin.org/get', data={'key':'value'})
+# Making a put request
+r = requests.put('https://httpbin.org/put', data={'key':'value'})
 
 #check status code for response recieved
 # success code - 200
