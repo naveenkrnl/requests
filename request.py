@@ -2,10 +2,10 @@
 import requests
 
 # Making a get request
-response = requests.get('https://api.github.com')
+response = requests.get('https://geeksforgeeks.org')
 
 # print response
 print(response)
 
-# print encoding time
-print(response.encoding)
+# print history
+print(response.history)
