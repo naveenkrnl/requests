@@ -1,11 +1,17 @@
 # import requests module
 import requests
 
-# Making a get request
-response = requests.get('https://geeksforgeeks.org')
+# create a session object
+s = requests.Session()
 
-# print response
-print(response)
+# set username and password
+s.auth = ('user', 'pass')
 
-# print history
-print(response.history)
+# update headers
+s.headers.update({'x-test': 'true'})
+
+# both 'x-test' and 'x-test2' are sent
+s.get('https://httpbin.org/headers', headers={'x-test2': 'true'})
+
+# print object
+print(s)
